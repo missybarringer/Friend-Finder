@@ -13,8 +13,29 @@ body {
 	flex: 1;
 }
 
-.fa {
+#homeIcon {
 	color: #e6ccff;
+}
+
+#home {
+	color: #c653c6;
+}
+#searchIcon {
+	color: #e6ccff;
+}
+
+#surveyIcon {
+	color: #c653c6;
+}
+
+#githubIcon {
+	color: #c653c6;
+	font-size: 2em;
+}
+
+.glyphicon {
+	margin-top: 0px;
+	color: #c653c6;
 }
 
 h1 {
@@ -50,8 +71,20 @@ form {
 	margin-top: 40px;
 }
 
-a {
-	color: #5cb85c;
+a:link {
+    color: #5cb85c;
+	font-size: 20px;
+}
+a:visited {
+    color: #5cb85c;
+	font-size: 20px;
+}
+a:hover {
+    color: #5cb85c;
+	font-size: 20px;
+}
+a:active {
+    color: #5cb85c;
 	font-size: 20px;
 }
 

@@ -5,14 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Link bootstrap, static CSS, and fonts -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/style.css">
 	<link href="https://fonts.googleapis.com/css?family=KoHo:600" rel="stylesheet">
 </head>
 <body>
 	<div class="container content">
-		<h1>Friend Finder Survey &nbsp;<a href="/"><button type="button" class="btn btn-light btn-lg" id="home"><span
-			class="glyphicon glyphicon-home"></span></button></a></h1>
-		<p>Take a quick survey to find your perfect match!</p>
+		<h1><span class="fa fa-user-circle-o" id="surveyIcon"></span>Friend Finder Survey</h1>
+		<p>Take a quick survey to find your perfect match! <a href="/"><button type="button" class="btn btn-light btn-lg" id="home">
+		<span class="glyphicon glyphicon-home"></span></button></a></p>
 		<!-- Form to provide the 10 questions -->
 		<form id="friendForm">
 			<div class="form-group">
@@ -161,7 +162,7 @@
 		<div class="container">
 			<a href="/api/friends">API Friend Link</a>
 			<span>|</span>
-			<a href="https://github.com/missybarringer/Friend-Finder">GitHub Repo</a>
+			<a href="https://github.com/missybarringer/Friend-Finder">GitHub Repo <span class="fa fa-github" id="githubIcon"></span></a>
 		</div>
 	</footer>
     <!-- Link to jQuery & bootstrap -->
