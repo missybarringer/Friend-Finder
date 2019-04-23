@@ -3,8 +3,8 @@
 <head>
 	<title>Friend Finder Survey</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link bootstrap, static CSS, and fonts -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- Link static CSS -->
 	<link rel="stylesheet" type="text/css" href="/style.css">
 	<link href="https://fonts.googleapis.com/css?family=KoHo:600" rel="stylesheet">
 </head>
@@ -13,6 +13,7 @@
 		<h1>Friend Finder Survey &nbsp;<a href="/"><button type="button" class="btn btn-light btn-lg" id="home"><span
 			class="glyphicon glyphicon-home"></span></button></a></h1>
 		<p>Take a quick survey to find your perfect match!</p>
+		<!-- Form to provide the 10 questions -->
 		<form>
 			<div class="form-group">
 				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
@@ -135,7 +136,7 @@
 			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
 		</div>
 		
-		<!-- Modal after survey completion -->
+		<!-- Modal for after survey completion -->
 		<div id="bestFriendModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -154,7 +155,7 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- Footer with links to api/friends & github repo -->
 	<footer>
 		<div class="container">
 			<a href="/api/friends">API Friend Link</a>
@@ -162,7 +163,7 @@
 			<a href="https://github.com/missybarringer/Friend-Finder">GitHub Repo</a>
 		</div>
 	</footer>
-
+    <!-- Link to jQuery & bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
@@ -171,10 +172,11 @@
 <script type="text/javascript">
 	$("#submitBtn").on("click", function(event) {
 		event.preventDefault();
-		// Form validation
+		// Form validation to make sure that all name & photo fields where answered
 		var valid = true;
 		if($("#name").val() === "" || $("#photo").val() === "") {
 			valid = false;
+		// Form validation to make sure that all questions were answered
 		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
 			valid = false;
 		}

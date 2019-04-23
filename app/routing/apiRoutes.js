@@ -16,7 +16,6 @@ module.exports = function(app) {
   // Below code handles when a user submits a form and thus submits data to the server.
   // In each of the below cases, when a user submits form data (a JSON object)
   // ...the JSON is pushed to the appropriate JavaScript array
-  // (ex. User fills out a reservation request... this data is then sent to the server...
   // Then the server saves the data to the friends data array)
   // ---------------------------------------------------------------------------
   app.post("/api/friends", function(req, res) {
@@ -34,10 +33,11 @@ module.exports = function(app) {
     var bestFriendIndex = 0;
     var minimumDifference = 40;
 
-    // in this for-loop, start off with a zero difference and compare the user and the ith friend scores, one set at a time
+    // in this for-loop, start off with a zero difference and compare the user and the array of friend scores, one set at a time
     //  whatever the difference is, add to the total difference
     for(var i = 0; i < friends.length; i++) {
       var totalDifference = 0;
+      // loop through scores using the absolute value of the differences to get the totalDifference
       for(var j = 0; j < friends[i].scores.length; j++) {
         var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
         totalDifference += difference;
