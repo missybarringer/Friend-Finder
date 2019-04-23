@@ -14,6 +14,7 @@ ____________________________________
 ## Links
 * [Click here to View the Friend Finder App in action](https://tranquil-citadel-96703.herokuapp.com/)
 * [GitHub Repository Link](https://github.com/missybarringer/Friend-Finder.git)
+! [Friend Finder Pic](http://webwabisabi.com/assets/images/friendFinder.PNG)
 ____________________________________
 ## Overview
 
