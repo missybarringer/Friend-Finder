@@ -14,7 +14,7 @@
 			class="glyphicon glyphicon-home"></span></button></a></h1>
 		<p>Take a quick survey to find your perfect match!</p>
 		<!-- Form to provide the 10 questions -->
-		<form>
+		<form id="friendForm">
 			<div class="form-group">
 				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
 			</div>
@@ -134,6 +134,7 @@
 		</form>
 		<div class="text-center">
 			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+			<button id="resetBtn" type="submit" class="btn btn-success btn-lg">Reset</button>
 		</div>
 		
 		<!-- Modal for after survey completion -->
@@ -170,6 +171,7 @@
 </html>
 
 <script type="text/javascript">
+	// Submit button event handler
 	$("#submitBtn").on("click", function(event) {
 		event.preventDefault();
 		// Form validation to make sure that all name & photo fields where answered
@@ -208,5 +210,10 @@
 			// If a required field is missing, show alert
 			alert("Survey is incomplete!");
 		}
+	});
+	// Reset button event handler
+	$("#resetBtn").on("click", function(event) {
+		event.preventDefault();
+		$("#friendForm")[0].reset();
 	});
 </script>
