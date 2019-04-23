@@ -4,7 +4,6 @@
 @missybarringer
 ____________________________________
 ## Technology
-* Command line game using:
 * Javascript
 * jQuery
 * node.js
@@ -13,8 +12,8 @@ ____________________________________
 * Bootstrap
 ____________________________________
 ## Links
+* [Click here to View the Friend Finder App in action](https://tranquil-citadel-96703.herokuapp.com/)
 * [GitHub Repository Link](https://github.com/missybarringer/Friend-Finder.git)
-* [Click here to View the Friend Finder App in action](http://www.webwabisabi.com/assets/media/BamazonCustomer.mp4)
 ____________________________________
 ## Overview
 
