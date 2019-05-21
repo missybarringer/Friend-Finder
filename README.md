@@ -22,7 +22,6 @@ ____________________________________
 Create a "FriendFinder" application -- basically a dating app. This site will take in results from your users' surveys then compare their answers with those from other users. The app then displays the name and picture of the user with the best overall match.
 ____________________________________
 ### The solution:
-I used Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
 
 The survey has 10 questions to find your best match. Each answer is on a scale of 1 to 5 based on how much the user agrees or disagrees with the question.
 
@@ -40,6 +39,8 @@ The survey has 10 questions to find your best match. Each answer is on a scale o
 
 5. The application's data is saved inside of `app/data/friends.js` as an array of objects.
 6. The most compatible friend is found by comparing the current user's scores against the scores from other users, question by question. The user with the least amount of difference is then displayed in a modal pop-up with their name & picture.
+
+I used Express to handle routing & deployed the app to Heroku so other users can fill it out.
 ____________________________________
 ## License
 *This product is licensed under the MIT License (MIT).
